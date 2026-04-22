@@ -1,18 +1,12 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #1e1e1e;
-  color: #fff;
+  font-family: Arial;
+  background: #121212;
+  color: white;
   text-align: center;
-  margin: 0;
-  padding: 10px;
-}
-
-h1 {
-  margin-bottom: 10px;
 }
 
 .section {
-  background: #2a2a2a;
+  background: #1e1e1e;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -23,22 +17,15 @@ button {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: #3a3a3a;
+  background: #333;
   color: white;
-  cursor: pointer;
 }
 
-button:hover {
-  background: #505050;
-}
-
-input[type="number"] {
-  padding: 5px;
-  width: 80px;
+input, textarea {
   margin: 5px;
+  padding: 8px;
   border-radius: 5px;
   border: none;
-  text-align: center;
 }
 
 ul {
@@ -47,7 +34,10 @@ ul {
 }
 
 li {
+  background: #2a2a2a;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  margin: 5px 0;
 }
