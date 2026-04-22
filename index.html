@@ -3,41 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tracker Picie / Mocz</title>
+  <title>Tracker</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <h1>Tracker Picie / Mocz</h1>
 
-  <!-- Wybór dnia -->
-  <div id="day-selector">
-    <button id="prev-day">⬅</button>
-    <span id="current-day"></span>
-    <button id="next-day">➡</button>
-  </div>
+<h1>💧 Tracker Picie / Mocz</h1>
 
-  <!-- Sekcja Picie -->
-  <div class="section" id="drinks-section">
-    <h2>Picie</h2>
-    <div id="drink-buttons"></div>
-    <input type="number" id="drink-custom" placeholder="Wpisz ml" min="1">
-    <button id="drink-custom-btn">Dodaj</button>
-    <div>Suma dnia: <span id="drink-total">0</span> ml</div>
-    <ul id="drink-list"></ul>
-  </div>
+<div id="day-selector">
+  <button id="prev-day">⬅</button>
+  <span id="current-day"></span>
+  <button id="next-day">➡</button>
+</div>
 
-  <!-- Sekcja Mocz -->
-  <div class="section" id="pees-section">
-    <h2>Mocz</h2>
-    <div id="pee-buttons"></div>
-    <input type="number" id="pee-custom" placeholder="Wpisz ml" min="1">
-    <button id="pee-custom-btn">Dodaj</button>
-    <div>Suma dnia: <span id="pee-total">0</span> ml</div>
-    <ul id="pee-list"></ul>
-  </div>
+<!-- PICIE -->
+<div class="section">
+  <h2>Picie</h2>
+  <div id="drink-buttons"></div>
 
-  <!-- Skrypt -->
-  <script src="app.js"></script>
+  <input type="number" id="drink-custom" placeholder="ml">
+  <button id="drink-custom-btn">Dodaj</button>
+
+  <div>Suma: <span id="drink-total">0</span> ml</div>
+  <ul id="drink-list"></ul>
+</div>
+
+<!-- MOCZ -->
+<div class="section">
+  <h2>Mocz</h2>
+  <div id="pee-buttons"></div>
+
+  <input type="number" id="pee-custom" placeholder="ml">
+  <button id="pee-custom-btn">Dodaj</button>
+
+  <div>Suma: <span id="pee-total">0</span> ml</div>
+  <ul id="pee-list"></ul>
+</div>
+
+<!-- ZAKRESY -->
+<div class="section">
+  <h3>Zakresy</h3>
+
+  <input type="time" id="new-range-start">
+  <input type="time" id="new-range-end">
+  <button id="add-range">Dodaj</button>
+
+  <ul id="ranges-list"></ul>
+</div>
+
+<!-- NOTATKI -->
+<div class="section">
+  <h3>Notatki</h3>
+  <textarea id="notes" placeholder="Notatki..."></textarea>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
